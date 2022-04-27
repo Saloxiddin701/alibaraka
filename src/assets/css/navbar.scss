@@ -1,0 +1,60 @@
+.navbar {
+  position: absolute;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+  font-family: 'gil-400';
+
+  .logo {
+    width: 87px;
+    height: 78px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .list {
+    display: flex;
+    gap: 41px;
+    list-style: none;
+
+    li a {
+      text-decoration: none;
+      color: #fff;
+      padding-bottom: 5px;
+      font-size: 16px;
+      transition: 0.4s;
+
+      &:hover {
+        color: rgb(89, 89, 223);
+        border-bottom: 1px solid rgb(89, 89, 223);
+      }
+    }
+  }
+
+  .phone {
+    display: flex;
+    align-items: center;
+    gap: 11.25px;
+
+    i {
+      padding: 7px;
+      border: 1px solid #037B35;
+      border-radius: 50%;
+      font-size: 18px;
+      color: transparent;
+      -webkit-text-stroke: 1px #037B35;
+    }
+
+    h1 {
+      font-size: 14px;
+      line-height: 14px;
+      color: #037B35;
+    }
+  }
+}

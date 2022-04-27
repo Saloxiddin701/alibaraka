@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'gil-400';
+    src: url('../fonts/gilroy/Gilroy-Light.ttf');
+}
+
+@font-face {
+    font-family: 'gil-500';
+    src: url('../fonts/gilroy/Gilroy-Heavy.ttf');
+}
+
+@font-face {
+    font-family: 'gil-700';
+    src: url('../fonts/gilroy/Gilroy-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'gil-800';
+    src: url('../fonts/gilroy/Gilroy-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: 'gil-900';
+    src: url('../fonts/gilroy/Gilroy-Bold.ttf');
+}

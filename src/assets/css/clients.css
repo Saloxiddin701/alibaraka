@@ -1,0 +1,53 @@
+.clients {
+  display: flex;
+  align-items: center;
+  gap: 30px; }
+  .clients .flag {
+    width: 80%;
+    object-fit: cover; }
+  .clients .item {
+    padding: 123px 0;
+    width: 60%; }
+    .clients .item .title {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 28px; }
+      .clients .item .title h1 {
+        font-size: 40px;
+        font-family: 'gil-800';
+        line-height: 35px;
+        letter-spacing: 1px;
+        color: #037B35; }
+      .clients .item .title p {
+        font-size: 15px;
+        font-family: Roboto;
+        font-weight: 400;
+        color: #1e252b; }
+    .clients .item .body {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      justify-content: center;
+      padding: 30px 35px 20px 40px;
+      border: 1px solid #e7e7e7;
+      border-radius: 20px; }
+      .clients .item .body .wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .clients .item .body .wrap h1 {
+          width: 70%;
+          font-size: 16px;
+          line-height: 19px;
+          font-family: 'gil-800';
+          color: #037B35;
+          text-transform: uppercase; }
+        .clients .item .body .wrap .yellow {
+          color: #FCBD17; }
+        .clients .item .body .wrap i {
+          color: #037B35;
+          font-size: 18px;
+          font-weight: 400; }
+
+/*# sourceMappingURL=clients.css.map */

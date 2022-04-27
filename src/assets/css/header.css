@@ -1,0 +1,93 @@
+.header {
+  width: 100%;
+  padding: 246px 0 152px;
+  background: url(../images/bg.png) no-repeat center/cover;
+  background-attachment: fixed; }
+  .header .item {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .header .item .left {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 15px; }
+      .header .item .left h1 {
+        font-size: 67px;
+        color: #ffffff;
+        font-family: 'gil-700'; }
+      .header .item .left p {
+        font-size: 18px;
+        line-height: 30px;
+        color: #ffffff;
+        opacity: 50%;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400; }
+      .header .item .left .btn {
+        width: 30%;
+        background: #FCBD17;
+        border-radius: 26px;
+        padding: 12px 33px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-family: 'Poppins', sans-serif;
+        line-height: 30px; }
+        .header .item .left .btn i {
+          margin-left: 8px; }
+    .header .item .right {
+      width: 50%; }
+      .header .item .right .line1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -260px;
+        right: 66px;
+        width: 465px;
+        height: 800px;
+        border-left: 1px solid #037B35;
+        border-top: 1px solid #037B35;
+        border-right: 1px solid #037B35;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        transform: rotate(-90deg); }
+        .header .item .right .line1 .line2 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 300px;
+          height: 300px;
+          border: 1px solid #037B35;
+          transform: rotate(45deg); }
+          .header .item .right .line1 .line2 .elapse {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            opacity: 0.5;
+            background: #fed372; }
+            .header .item .right .line1 .line2 .elapse i {
+              font-size: 60px;
+              color: #FCBD17;
+              transform: rotate(45deg); }
+
+.bottom {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  overflow: hidden; }
+  .bottom .img {
+    position: absolute;
+    width: 110%;
+    bottom: -35.9%;
+    left: -10%; }
+
+/*# sourceMappingURL=header.css.map */

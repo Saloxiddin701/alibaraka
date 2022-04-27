@@ -1,0 +1,141 @@
+.products {
+  padding: 117px 0 0;
+  position: relative; }
+  .products .img {
+    position: absolute;
+    z-index: -1;
+    top: 1.5%;
+    left: 0; }
+  .products .title {
+    padding-left: 120px;
+    color: #000; }
+    .products .title h1 {
+      font-size: 56px;
+      line-height: 54px;
+      text-transform: uppercase;
+      font-family: 'gil-900'; }
+    .products .title p {
+      font-size: 16px;
+      font-family: Roboto;
+      font-weight: 400;
+      width: 50%;
+      padding-top: 15px; }
+  .products .box {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 42px 0 112px; }
+    .products .box .card {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      width: 492px;
+      height: 199px;
+      padding: 17px 48px 17px 17px;
+      border: 1px solid #d9dcec;
+      border-radius: 8px; }
+      .products .box .card.active {
+        border: 3px solid #037B35; }
+      .products .box .card img {
+        width: 206px;
+        height: 166px;
+        object-fit: cover; }
+      .products .box .card h1 {
+        font-size: 20px;
+        font-family: 'gil-800';
+        line-height: 21px;
+        text-transform: uppercase;
+        margin-bottom: 8px; }
+      .products .box .card p {
+        font-size: 12px;
+        font-family: Roboto;
+        font-weight: 400;
+        line-height: 19px; }
+  .products .about {
+    display: flex; }
+    .products .about .left {
+      padding-left: 50px;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 35px; }
+      .products .about .left h1 {
+        font-size: 56px;
+        font-family: 'gil-800';
+        line-height: 54px;
+        color: black;
+        text-transform: uppercase; }
+      .products .about .left p {
+        font-size: 16px;
+        font-family: Roboto;
+        font-weight: 400;
+        line-height: 26px;
+        color: #000000; }
+      .products .about .left .buttons {
+        display: flex;
+        gap: 33px; }
+        .products .about .left .buttons .btn {
+          border-radius: 30px;
+          background: transparent;
+          outline: none;
+          border: none;
+          color: #037B35;
+          text-transform: uppercase;
+          font-size: 18px;
+          font-family: 'Poppins', sans-serif;
+          font-weight: 400;
+          cursor: pointer; }
+          .products .about .left .buttons .btn.active {
+            padding: 5px 15px;
+            border: 2px solid #037B35; }
+    .products .about .right {
+      width: 50%;
+      position: relative; }
+      .products .about .right .tractor {
+        position: absolute;
+        z-index: 999;
+        top: 50%; }
+      .products .about .right .img-left {
+        z-index: 99; }
+      .products .about .right .img-right {
+        left: 30%; }
+      .products .about .right img {
+        position: absolute; }
+    .products .about .cloud {
+      position: absolute;
+      right: 0;
+      bottom: 25%;
+      z-index: 9999; }
+  .products .bottom {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 170px;
+    position: relative;
+    margin-top: 160px; }
+    .products .bottom .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .products .bottom .wrapper h4 {
+        color: #037B35; }
+      .products .bottom .wrapper .item {
+        color: #037B35;
+        font-size: 30px; }
+      .products .bottom .wrapper .fa-chevron-right {
+        color: #037B35;
+        padding: 15px;
+        border-radius: 50%;
+        border: 1px solid #037B35; }
+    .products .bottom img {
+      position: absolute;
+      z-index: -1;
+      width: 120%;
+      top: 0;
+      left: -5%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.5; }
+
+/*# sourceMappingURL=product.css.map */
