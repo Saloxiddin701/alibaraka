@@ -7,6 +7,11 @@ const routes = [
     name: 'home',
     component: Home
   },
+  {
+    path: '/products',
+    name: 'products',
+    component: () => import('../components/Products')
+  }
 ]
 
 const router = createRouter({

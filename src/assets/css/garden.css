@@ -1,0 +1,84 @@
+.garden {
+  padding-bottom: 165px; }
+  .garden .card {
+    width: 540px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background: #FFFFFF;
+    box-shadow: 0 8px 28px rgba(83, 83, 83, 0.15);
+    border-radius: 15px; }
+    .garden .card .body {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+      padding: 40px;
+      position: relative; }
+      .garden .card .body .rectangle {
+        width: 184px;
+        height: 184px;
+        background-color: #60b45a;
+        transform: rotate(45deg);
+        position: absolute;
+        top: -5%;
+        left: -30%; }
+      .garden .card .body .elapse {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: #fed372;
+        position: absolute;
+        top: 50%;
+        right: -25%; }
+      .garden .card .body h1 {
+        width: 50%;
+        text-transform: uppercase;
+        margin: auto;
+        font-size: 29px;
+        font-family: "gil-800";
+        line-height: 28px;
+        color: #000000; }
+      .garden .card .body p {
+        font-size: 16px;
+        line-height: 26px;
+        font-family: Roboto;
+        font-weight: 400;
+        color: #000000; }
+      .garden .card .body .inputs {
+        display: flex;
+        gap: 25px;
+        flex-wrap: wrap; }
+        .garden .card .body .inputs input {
+          padding: 15px 20px 15px;
+          border: 1px solid #e7e7e7;
+          background-color: #f8f8f8;
+          border-radius: 6px;
+          outline: none; }
+        .garden .card .body .inputs textarea {
+          width: 98%;
+          padding: 10px 10px 60px 15px;
+          border: 1px solid #e7e7e7;
+          background-color: #f8f8f8;
+          border-radius: 6px;
+          outline: none; }
+      .garden .card .body .btn {
+        width: 98%;
+        color: #FFFFFF;
+        font-size: 15px;
+        line-height: 60px;
+        font-family: 'gil-800';
+        background-color: #037B35;
+        border-radius: 30px;
+        border: none;
+        outline: none;
+        text-transform: uppercase;
+        transition: 0.4s; }
+        .garden .card .body .btn:hover {
+          color: #037B35;
+          background-color: #FFFFFF;
+          border: 1px solid #037B35; }
+
+/*# sourceMappingURL=garden.css.map */

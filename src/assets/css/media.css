@@ -1,0 +1,226 @@
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 425px; }
+
+  .header {
+    width: 100%; }
+    .header .navbar .phone {
+      display: none; }
+    .header .item {
+      padding: 30px 0; }
+      .header .item .left {
+        width: 100%; }
+        .header .item .left h1 {
+          font-size: 55px; }
+        .header .item .left .btn {
+          width: 40%; }
+      .header .item .right {
+        display: none; }
+        .header .item .right .line1 {
+          display: none; }
+
+  .products {
+    padding: 55px 0 0; }
+    .products .title {
+      padding: 0; }
+      .products .title h1 {
+        font-size: 40px; }
+      .products .title p {
+        width: 100%; }
+    .products .box .card {
+      width: 370px;
+      height: 160px; }
+      .products .box .card img {
+        width: 50%;
+        height: 100%; }
+    .products .about {
+      flex-direction: column; }
+      .products .about .cloud {
+        bottom: 16%; }
+      .products .about .left {
+        width: 100%;
+        padding: 0; }
+        .products .about .left h1 {
+          font-size: 40px; }
+      .products .about .right {
+        width: 100%;
+        height: 100%;
+        padding-top: 50px; }
+        .products .about .right .tractor {
+          width: 50%;
+          top: 160%;
+          left: 20%; }
+        .products .about .right img {
+          width: 60%; }
+    .products .bottom {
+      margin-top: 250px; }
+      .products .bottom .wrapper .fa-chevron-right {
+        padding: 5px; }
+      .products .bottom .wrapper .item {
+        font-size: 16px; }
+
+  .clients {
+    flex-direction: column-reverse;
+    gap: 0; }
+    .clients .item {
+      width: 100%;
+      padding: 70px 0; }
+
+  .success {
+    padding: 50px 0 170px; }
+    .success .wrapper {
+      flex-direction: column-reverse;
+      gap: 20px; }
+      .success .wrapper .left {
+        width: 100%; }
+        .success .wrapper .left h1 {
+          width: 100%;
+          padding: 0; }
+        .success .wrapper .left img {
+          width: 100%; }
+        .success .wrapper .left .learned {
+          width: 55%; }
+      .success .wrapper .right {
+        width: 100%; }
+
+  .garden .card {
+    width: 100%; }
+    .garden .card img {
+      width: 100%; }
+    .garden .card input {
+      width: 100%; }
+
+  .footer .wrapper {
+    flex-wrap: wrap;
+    gap: 25px; }
+  .footer .img {
+    bottom: -6%; }
+
+  .bottom .img {
+    bottom: 17%; } }
+@media only screen and (max-width: 425px) {
+  .container {
+    max-width: 375px; }
+
+  .header .item .left h1 {
+    font-size: 50px; }
+  .header .item .left p {
+    font-size: 16px; }
+  .header .item .left .btn {
+    font-size: 16px;
+    padding: 10px 20px; }
+
+  .products {
+    padding: 0 !important; }
+    .products .img {
+      display: none; }
+    .products .card {
+      width: 100%;
+      height: 150px; }
+    .products .about .cloud {
+      width: 40%;
+      bottom: 26%; }
+
+  .success .wrapper .right .title {
+    width: 100%; }
+  .success .wrapper .left .learned {
+    width: 45%; }
+
+  .garden .card .body .rectangle {
+    width: 120px;
+    height: 120px;
+    left: -20%; }
+  .garden .card .body .elapse {
+    width: 120px;
+    height: 120px;
+    right: -8%;
+    top: 50%; }
+
+  .bottom1 {
+    height: 140px; }
+    .bottom1 .img {
+      bottom: 54.1%; } }
+@media only screen and (max-width: 375px) {
+  .container {
+    max-width: 320px; }
+
+  .header .item .left h1 {
+    font-size: 40px; }
+  .header .item .left p {
+    font-size: 14px; }
+  .header .item .left .btn {
+    width: 50%;
+    padding: 5px 20px; }
+
+  .products .box .card {
+    padding: 17px; }
+    .products .box .card h1 {
+      font-size: 16px; }
+  .products .bottom .wrapper {
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center; }
+  .products .about .left .buttons .btn {
+    font-size: 14px; }
+
+  .success .wrapper .left .learned {
+    gap: 5px;
+    padding: 5px; }
+    .success .wrapper .left .learned h1 {
+      font-size: 14px; }
+    .success .wrapper .left .learned p {
+      font-size: 10px; }
+  .success .wrapper .left .made .btn {
+    padding: 6px 12px; }
+
+  .footer .wrapper .right {
+    gap: 42px; }
+  .footer .bottom h1 {
+    font-size: 12px; } }
+@media only screen and (max-width: 320px) {
+  .container {
+    width: 100%; }
+
+  .header .navbar .icon {
+    right: 15%; }
+  .header .item .left h1 {
+    font-size: 35px; }
+  .header .item .left p {
+    font-size: 12px; }
+  .header .item .left .btn {
+    width: 45%;
+    padding: 5px; }
+
+  .products .box .card {
+    gap: 10px;
+    padding: 7px; }
+    .products .box .card h1 {
+      font-size: 14px; }
+  .products .about .left h1 {
+    font-size: 35px; }
+  .products .about .cloud {
+    width: 50%;
+    bottom: 26%; }
+  .products .title h1 {
+    font-size: 35px; }
+
+  .clients .item .title h1 {
+    font-size: 35px; }
+
+  .success .wrapper .right .title {
+    font-size: 35px; }
+
+  .garden .card .body h1 {
+    width: 100%; }
+  .garden .card .body .btn {
+    line-height: 40px; }
+
+  .footer .wrapper .right {
+    gap: 28px; }
+  .footer .bottom h1 {
+    font-size: 11px; }
+
+  .bottom1 .img {
+    bottom: 61.1%; } }
+
+/*# sourceMappingURL=media.css.map */

@@ -1,0 +1,133 @@
+.success {
+  padding-bottom: 228px;
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+
+    .left {
+      width: 50%;
+      position: relative;
+
+      h1 {
+        width: 55%;
+        padding-left: 45px;
+        font-size: 28px;
+        font-family: "gil-800";
+        line-height: 30px;
+        color: #4444;
+      }
+
+      .made {
+        .btn {
+          position: absolute;
+          bottom: 18%;
+          right: 10%;
+          padding: 11px 30px;
+          border: none;
+          outline: none;
+          font-size: 15px;
+          font-family: 'gil-400';
+          line-height: 23px;
+          color: #ffffff;
+          background-color: #037B35;
+          border-radius: 50px;
+          box-shadow: 7px 7px 20px rgba(0,0,0,0.3);
+          transition: 0.4s;
+
+          &:hover {
+            color: #037B35;
+            background-color: #ffffff;
+          }
+        }
+      }
+
+      .learned {
+        position: absolute;
+        width: 40%;
+        top: 65%;
+        left: 20%;
+        background-color: #ffffff;
+        transform: translate(-50%, -50%);
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+
+        h1 {
+          width: 100%;
+          padding: 0;
+          font-size: 18px;
+          font-family: 'gil-800';
+          line-height: 25px;
+          color: #037B35;
+        }
+
+        p {
+          font-size: 13px;
+          line-height: 23px;
+          font-family: 'Poppins', sans-serif;
+          font-weight: 400;
+        }
+
+        a {
+          text-decoration: none;
+          font-size: 13px;
+          font-family: 'gil-800';
+          line-height: 23px;
+          color: #037B35;
+        }
+      }
+    }
+
+    .right {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+
+      .title {
+        width: 80%;
+        font-size: 42px;
+        font-family: 'gil-800';
+        line-height: 40px;
+        color: #444;
+        padding-bottom: 18px;
+        border-bottom: 1px solid #dadada;
+      }
+
+      .item {
+        width: 80%;
+        padding-bottom: 18px;
+        border-bottom: 1px solid #dadada;
+
+        h1 {
+          font-size: 20px;
+          font-family: 'gil-800';
+          line-height: 25px;
+          color: #037B35;
+          margin-bottom: 8px;
+        }
+
+        p {
+          font-size: 15px;
+          font-family: 'gil-400';
+          line-height: 23px;
+          color: #363636;
+          margin-bottom: 24px;
+        }
+
+        a {
+          text-decoration: none;
+          font-size: 14px;
+          font-family: 'gil-400';
+          color: #037B35;
+        }
+
+        &:last-child {
+          border: none;
+        }
+      }
+    }
+  }
+}

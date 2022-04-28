@@ -1,0 +1,479 @@
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 425px;
+  }
+  .header {
+    width: 100%;
+
+    .navbar {
+      .phone {
+        display: none;
+      }
+    }
+
+    .item {
+      padding: 30px 0;
+
+      .left {
+        width: 100%;
+
+        h1 {
+          font-size: 55px;
+        }
+
+        .btn {
+          width: 40%;
+        }
+      }
+
+      .right {
+        display: none;
+
+        .line1 {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .products {
+    padding: 55px 0 0;
+
+    .title {
+      padding: 0;
+
+      h1 {
+        font-size: 40px;
+      }
+
+      p {
+        width: 100%;
+      }
+    }
+
+    .box {
+      .card {
+        width: 370px;
+        height: 160px;
+
+        img {
+          width: 50%;
+          height: 100%;
+        }
+      }
+    }
+
+    .about {
+      flex-direction: column;
+
+      .cloud {
+        bottom: 16%;
+      }
+
+      .left {
+        width: 100%;
+        padding: 0;
+
+        h1 {
+          font-size: 40px;
+        }
+      }
+
+      .right {
+        width: 100%;
+        height: 100%;
+        padding-top: 50px;
+
+        .tractor {
+          width: 50%;
+          top: 160%;
+          left: 20%;
+        }
+
+        img {
+          width: 60%;
+        }
+      }
+    }
+
+    .bottom {
+      margin-top: 250px;
+
+      .wrapper {
+        .fa-chevron-right {
+          padding: 5px;
+        }
+
+        .item {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .clients {
+    flex-direction: column-reverse;
+    gap: 0;
+
+    .item {
+      width: 100%;
+      padding: 70px 0;
+    }
+  }
+
+  .success {
+    padding: 50px 0 170px;
+
+    .wrapper {
+      flex-direction: column-reverse;
+      gap: 20px;
+
+      .left {
+        width: 100%;
+
+        h1 {
+          width: 100%;
+          padding: 0;
+        }
+
+        img {
+          width: 100%;
+        }
+
+        .learned {
+          width: 55%;
+        }
+      }
+
+      .right {
+        width: 100%;
+      }
+    }
+  }
+
+  .garden {
+    .card {
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+
+      input {
+        width: 100%;
+      }
+    }
+  }
+
+  .footer {
+    .wrapper {
+      flex-wrap: wrap;
+      gap: 25px;
+    }
+
+    .img {
+      bottom: -6%;
+    }
+  }
+
+  .bottom .img {
+    bottom: 17%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .container {
+    max-width: 375px;
+  }
+
+  .header {
+    .item {
+      .left {
+        h1 {
+          font-size: 50px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+
+        .btn {
+          font-size: 16px;
+          padding: 10px 20px;
+        }
+      }
+    }
+  }
+
+  .products {
+    padding: 0 !important;
+
+    .img {
+      display: none;
+    }
+
+    .card {
+      width: 100%;
+      height: 150px;
+    }
+
+    .about {
+      .cloud {
+        width: 40%;
+        bottom: 26%;
+      }
+    }
+  }
+
+  .success {
+    .wrapper {
+      .right {
+        .title {
+          width: 100%;
+        }
+      }
+
+      .left {
+        .learned {
+          width: 45%;
+        }
+      }
+    }
+  }
+
+  .garden {
+    .card {
+      .body {
+        .rectangle {
+          width: 120px;
+          height: 120px;
+          left: -20%;
+        }
+
+        .elapse {
+          width: 120px;
+          height: 120px;
+          right: -8%;
+          top: 50%;
+        }
+      }
+    }
+  }
+
+  .bottom1 {
+    height: 140px;
+
+    .img {
+      bottom: 54.1%;
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    max-width: 320px;
+  }
+  .header {
+    .item {
+      .left {
+        h1 {
+          font-size: 40px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+
+        .btn {
+          width: 50%;
+          padding: 5px 20px;
+        }
+      }
+    }
+  }
+
+  .products {
+    .box {
+      .card {
+        padding: 17px;
+
+        h1 {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .bottom {
+      .wrapper {
+        flex-wrap: wrap;
+        gap: 5px;
+        justify-content: center;
+      }
+    }
+
+    .about {
+      .left {
+        .buttons {
+          .btn {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .success {
+    .wrapper {
+      .left {
+        .learned {
+          gap: 5px;
+          padding: 5px;
+
+          h1 {
+            font-size: 14px;
+          }
+
+          p {
+            font-size: 10px;
+          }
+        }
+
+        .made {
+          .btn {
+            padding: 6px 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    .wrapper {
+      .right {
+        gap: 42px;
+      }
+    }
+
+    .bottom {
+      h1 {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .container {
+    width: 100%;
+  }
+
+  .header {
+    .navbar {
+      .icon {
+        right: 15%;
+      }
+    }
+
+    .item {
+      .left {
+        h1 {
+          font-size: 35px;
+        }
+
+        p {
+          font-size: 12px;
+        }
+
+        .btn {
+          width: 45%;
+          padding: 5px;
+        }
+      }
+    }
+  }
+
+  .products {
+    .box {
+      .card {
+        gap: 10px;
+        padding: 7px;
+
+        h1 {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .about {
+      .left {
+        h1 {
+          font-size: 35px;
+        }
+      }
+
+      .cloud {
+        width: 50%;
+        bottom: 26%;
+      }
+    }
+
+    .title {
+      h1 {
+        font-size: 35px;
+      }
+    }
+  }
+
+  .clients {
+    .item {
+      .title {
+        h1 {
+          font-size: 35px;
+        }
+      }
+    }
+  }
+
+  .success {
+    .wrapper {
+      .right {
+        .title {
+          font-size: 35px;
+        }
+      }
+    }
+  }
+
+  .garden {
+    .card {
+      .body {
+        h1 {
+          width: 100%;
+        }
+        .btn {
+          line-height: 40px;
+        }
+      }
+    }
+  }
+
+  .footer {
+    .wrapper {
+      .right {
+        gap: 28px;
+      }
+    }
+
+    .bottom {
+      h1 {
+        font-size: 11px;
+      }
+    }
+  }
+
+  .bottom1 {
+    .img {
+      bottom: 61.1%;
+    }
+  }
+}

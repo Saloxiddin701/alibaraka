@@ -108,6 +108,7 @@
       bottom: 25%;
       z-index: 9999; }
   .products .bottom {
+    overflow: hidden;
     display: flex;
     align-items: center;
     width: 100%;
