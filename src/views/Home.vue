@@ -10,7 +10,7 @@
             <router-link to="{ name: '/' }">Products</router-link>
           </li>
           <li>
-            <router-link to="{ name: '/products' }">About Us</router-link>
+            <router-link to="{ name: '' }">About Us</router-link>
           </li>
           <li>
             <router-link :to="{ name: '' }">Blog</router-link>
