@@ -2,17 +2,31 @@
   .container {
     max-width: 425px;
   }
+
+  .navbar {
+    .dropdown-nav {
+      a {
+        text-decoration: none;
+        color: #000000;
+        transition: 0.4s;
+        padding-bottom: 5px;
+
+        &:hover {
+          color: #037B35;
+          border-bottom: 1px solid #037B35;
+        }
+      }
+    }
+    .phone {
+      display: none;
+    }
+  }
+
   .header {
     width: 100%;
 
-    .navbar {
-      .phone {
-        display: none;
-      }
-    }
-
     .item {
-      padding: 30px 0;
+      padding: 150px 0;
 
       .left {
         width: 100%;
@@ -67,7 +81,7 @@
       flex-direction: column;
 
       .cloud {
-        bottom: 16%;
+        bottom: 10%;
       }
 
       .left {
@@ -112,6 +126,7 @@
   }
 
   .clients {
+    padding-top: 70px;
     flex-direction: column-reverse;
     gap: 0;
 
@@ -122,7 +137,7 @@
   }
 
   .success {
-    padding: 50px 0 170px;
+    padding: 150px 0 170px;
 
     .wrapper {
       flex-direction: column-reverse;
@@ -155,6 +170,12 @@
     .card {
       width: 100%;
 
+      .body {
+        h1 {
+          width: 100%;
+        }
+      }
+
       img {
         width: 100%;
       }
@@ -184,6 +205,10 @@
 @media only screen and (max-width: 425px) {
   .container {
     max-width: 375px;
+  }
+
+  .navbar {
+    padding: 25px 40px;
   }
 
   .header {
@@ -220,7 +245,7 @@
     .about {
       .cloud {
         width: 40%;
-        bottom: 26%;
+        bottom: 13%;
       }
     }
   }
@@ -273,6 +298,10 @@
   .container {
     max-width: 320px;
   }
+  .navbar {
+    padding: 25px 35px;
+  }
+
   .header {
     .item {
       .left {
@@ -367,13 +396,13 @@
     width: 100%;
   }
 
-  .header {
-    .navbar {
-      .icon {
-        right: 15%;
-      }
+  .navbar {
+    .icon {
+      right: 12%;
     }
+  }
 
+  .header {
     .item {
       .left {
         h1 {
@@ -410,11 +439,6 @@
           font-size: 35px;
         }
       }
-
-      .cloud {
-        width: 50%;
-        bottom: 26%;
-      }
     }
 
     .title {
@@ -448,6 +472,7 @@
     .card {
       .body {
         h1 {
+          font-size: 22px;
           width: 100%;
         }
         .btn {

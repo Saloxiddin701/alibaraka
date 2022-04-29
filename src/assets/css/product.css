@@ -1,5 +1,5 @@
 .products {
-  padding: 117px 0 0;
+  padding: 140px 0 0;
   position: relative; }
   .products .img {
     position: absolute;
@@ -105,16 +105,16 @@
     .products .about .cloud {
       position: absolute;
       right: 0;
-      bottom: 25%;
+      bottom: 8%;
       z-index: 9999; }
   .products .bottom {
-    overflow: hidden;
     display: flex;
     align-items: center;
     width: 100%;
     height: 170px;
     position: relative;
-    margin-top: 160px; }
+    margin-top: 160px;
+    overflow: hidden; }
     .products .bottom .wrapper {
       display: flex;
       align-items: center;

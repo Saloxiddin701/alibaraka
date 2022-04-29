@@ -1,5 +1,5 @@
 .products {
-  padding: 117px 0 0;
+  padding: 140px 0 0;
   position: relative;
 
   .img {
@@ -149,7 +149,7 @@
     .cloud {
       position: absolute;
       right: 0;
-      bottom: 25%;
+      bottom: 8%;
       z-index: 9999;
     }
   }
@@ -161,6 +161,7 @@
     height: 170px;
     position: relative;
     margin-top: 160px;
+    overflow: hidden;
 
     .wrapper {
       display: flex;

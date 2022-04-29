@@ -1,5 +1,5 @@
 <template>
-  <section class="garden">
+  <section class="garden" id="contact">
     <div class="container">
       <div class="card">
         <img src="../assets/images/garden.png" alt="">

@@ -1,5 +1,5 @@
 .success {
-  padding-bottom: 228px;
+  padding: 140px 0;
 
   .wrapper {
     display: flex;
@@ -8,6 +8,12 @@
     .left {
       width: 50%;
       position: relative;
+
+      img {
+        width: 80%;
+        height: 500px;
+        object-fit: cover;
+      }
 
       h1 {
         width: 55%;
@@ -85,6 +91,12 @@
       display: flex;
       flex-direction: column;
       gap: 14px;
+      max-height: 500px;
+      overflow-y: scroll;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
 
       .title {
         width: 80%;
@@ -117,8 +129,9 @@
           margin-bottom: 24px;
         }
 
-        a {
-          text-decoration: none;
+        li {
+          cursor: pointer;
+          list-style: none;
           font-size: 14px;
           font-family: 'gil-400';
           color: #037B35;

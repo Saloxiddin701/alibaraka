@@ -2,12 +2,21 @@
   .container {
     max-width: 425px; }
 
+  .navbar .dropdown-nav a {
+    text-decoration: none;
+    color: #000000;
+    transition: 0.4s;
+    padding-bottom: 5px; }
+    .navbar .dropdown-nav a:hover {
+      color: #037B35;
+      border-bottom: 1px solid #037B35; }
+  .navbar .phone {
+    display: none; }
+
   .header {
     width: 100%; }
-    .header .navbar .phone {
-      display: none; }
     .header .item {
-      padding: 30px 0; }
+      padding: 150px 0; }
       .header .item .left {
         width: 100%; }
         .header .item .left h1 {
@@ -36,7 +45,7 @@
     .products .about {
       flex-direction: column; }
       .products .about .cloud {
-        bottom: 16%; }
+        bottom: 10%; }
       .products .about .left {
         width: 100%;
         padding: 0; }
@@ -60,6 +69,7 @@
         font-size: 16px; }
 
   .clients {
+    padding-top: 70px;
     flex-direction: column-reverse;
     gap: 0; }
     .clients .item {
@@ -67,7 +77,7 @@
       padding: 70px 0; }
 
   .success {
-    padding: 50px 0 170px; }
+    padding: 150px 0 170px; }
     .success .wrapper {
       flex-direction: column-reverse;
       gap: 20px; }
@@ -85,6 +95,8 @@
 
   .garden .card {
     width: 100%; }
+    .garden .card .body h1 {
+      width: 100%; }
     .garden .card img {
       width: 100%; }
     .garden .card input {
@@ -101,6 +113,9 @@
 @media only screen and (max-width: 425px) {
   .container {
     max-width: 375px; }
+
+  .navbar {
+    padding: 25px 40px; }
 
   .header .item .left h1 {
     font-size: 50px; }
@@ -119,7 +134,7 @@
       height: 150px; }
     .products .about .cloud {
       width: 40%;
-      bottom: 26%; }
+      bottom: 13%; }
 
   .success .wrapper .right .title {
     width: 100%; }
@@ -143,6 +158,9 @@
 @media only screen and (max-width: 375px) {
   .container {
     max-width: 320px; }
+
+  .navbar {
+    padding: 25px 35px; }
 
   .header .item .left h1 {
     font-size: 40px; }
@@ -181,8 +199,9 @@
   .container {
     width: 100%; }
 
-  .header .navbar .icon {
-    right: 15%; }
+  .navbar .icon {
+    right: 12%; }
+
   .header .item .left h1 {
     font-size: 35px; }
   .header .item .left p {
@@ -198,9 +217,6 @@
       font-size: 14px; }
   .products .about .left h1 {
     font-size: 35px; }
-  .products .about .cloud {
-    width: 50%;
-    bottom: 26%; }
   .products .title h1 {
     font-size: 35px; }
 
@@ -211,6 +227,7 @@
     font-size: 35px; }
 
   .garden .card .body h1 {
+    font-size: 22px;
     width: 100%; }
   .garden .card .body .btn {
     line-height: 40px; }

@@ -44,10 +44,26 @@
       border: 1px solid #e7e7e7;
       border-radius: 20px;
 
+      .wrap:nth-child(even) {
+        h1, p {
+          color: #FCBD17;
+        }
+      }
+
       .wrap {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        .wrapper {
+          border-bottom: 1px solid #e7e7e7;
+          padding-bottom: 5px;
+        }
+        .head {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        p {
+          padding: 20px 0;
+          color: #037B35;
+        }
 
         h1 {
           width: 70%;
@@ -56,10 +72,6 @@
           font-family: 'gil-800';
           color: #037B35;
           text-transform: uppercase;
-        }
-
-        .yellow {
-          color: #FCBD17;
         }
 
         i {

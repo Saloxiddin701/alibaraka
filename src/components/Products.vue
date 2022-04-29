@@ -1,5 +1,5 @@
 <template>
-  <section class="products">
+  <section class="products" id="product">
     <img src="../assets/images/product-bg.png" alt="" class="img">
     <div class="container">
       <div class="title">
@@ -10,60 +10,11 @@
         </p>
       </div>
       <div class="box">
-        <div class="card active">
-          <img src="../assets/images/1.png" alt="">
-          <div class="text">
-            <h1>asosiy plyonka turlari</h1>
-            <p>
-              Et magni et ea unde tempore. Corrupti quia adipisci qui dicta sint.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="../assets/images/4.png" alt="">
-          <div class="text">
-            <h1>Asosiy Zajim turlari</h1>
-            <p>
-              Et magni et ea unde tempore. Corrupti quia adipisci qui dicta sint.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="../assets/images/2.png" alt="">
-          <div class="text">
-            <h1>Tomchilab sug’orish tizimi</h1>
-            <p>
-              Et magni et ea unde tempore. Corrupti quia adipisci qui dicta sint.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="../assets/images/5.png" alt="">
-          <div class="text">
-            <h1>ISSIQXONANING sovutish TIZIMI</h1>
-            <p>
-              Et magni et ea unde tempore. Corrupti quia adipisci qui dicta sint.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="../assets/images/3.png" alt="">
-          <div class="text">
-            <h1>ISSIQXONANING isitish TIZIMI</h1>
-            <p>
-              Et magni et ea unde tempore. Corrupti quia adipisci qui dicta sint.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="../assets/images/6.png" alt="">
-          <div class="text">
-            <h1>QO’shimcha aksessuarlar</h1>
-            <p>
-              Et magni et ea unde tempore. Corrupti quia adipisci qui dicta sint.
-            </p>
-          </div>
-        </div>
+        <ProductCard
+          v-for="product in products"
+          :key="product.id"
+          :product="product"
+        />
       </div>
       <div class="about">
         <div class="left">
@@ -101,7 +52,7 @@
           <div class="item">
             <i class="fa fa-wordpress"></i> WordPress
           </div>
-           <i class="fa fa-chevron-right"></i>
+          <i class="fa fa-chevron-right"></i>
         </div>
         <img src="../assets/images/bottom-img-removebg-preview.png" alt="">
       </div>
@@ -110,8 +61,29 @@
 </template>
 
 <script>
+import ProductCard from "@/components/Product-card";
+import axios from 'axios'
+
 export default {
-  name: 'Products'
+  name: 'Products',
+  components: {
+    ProductCard
+  },
+  data() {
+    return {
+      products: [],
+      api: 'https://alibaraka.pythonanywhere.com/api/products/'
+    }
+  },
+  methods: {
+    async fetchProducts() {
+      const res = await axios.get(this.api)
+      this.products = res.data
+    }
+  },
+  mounted() {
+    this.fetchProducts()
+  }
 }
 </script>
 

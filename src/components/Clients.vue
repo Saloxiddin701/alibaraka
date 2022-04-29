@@ -1,5 +1,5 @@
 <template>
-  <section class="clients">
+  <section class="clients" id="about">
     <img src="../assets/images/flag.png" alt="" class="flag">
     <div class="container">
       <div class="item">
@@ -11,22 +11,11 @@
           </p>
         </div>
          <div class="body">
-           <div class="wrap">
-             <h1>Do you provide customer support?</h1>
-             <i class="fa fa-plus"></i>
-           </div>
-           <div class="wrap">
-             <h1 class="yellow">How much traffic can the hosting handle?</h1>
-             <i class="fa fa-plus"></i>
-           </div>
-           <div class="wrap">
-             <h1>Do you have any questions for us?</h1>
-             <i class="fa fa-plus"></i>
-           </div>
-           <div class="wrap">
-             <h1 class="yellow">What is your return policy?</h1>
-             <i class="fa fa-plus"></i>
-           </div>
+           <Question
+               v-for="question in questions"
+               :key="question.id"
+               :question="question"
+           />
          </div>
       </div>
     </div>
@@ -34,8 +23,30 @@
 </template>
 
 <script>
+import Question from "@/components/Question";
+import axios from "axios";
+
 export default {
-  name: "Clients"
+  name: "Clients",
+  components: {
+    Question
+  },
+  data() {
+    return {
+      is_open: false,
+      api: 'https://alibaraka.pythonanywhere.com/api/questions/',
+      questions: []
+    }
+  },
+  methods: {
+    async fetchQuestion() {
+      const res = await axios.get(this.api)
+      this.questions = await res.data
+    }
+  },
+  mounted() {
+    this.fetchQuestion()
+  }
 }
 </script>
 

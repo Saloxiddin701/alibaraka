@@ -1,48 +1,29 @@
 <template>
-  <section class="success">
+  <section class="success" id="blog">
     <div class="container">
       <div class="wrapper">
         <div class="left">
           <h1>How our client made 10x revenue</h1>
-          <img src="../assets/images/client.png" alt="">
+          <img
+              :src="stories[active_story].image ? stories[active_story].image : default_image"
+              :alt="stories[active_story].name">
           <div class="made">
             <div class="learned">
-              <h1>"I learned so much, even as a professional".</h1>
-              <p>
-                "Ut vehicula lacus a lacus tempor, nec viverra justo condimentum. Integer eu urna dapibus, scelerisque
-                nisl non, semper ipsum. Etiam dolor arcu, tincidunt a arcu eget."
-              </p>
-              <a href="#">Juan Huang</a>
+              <h1>{{ stories[active_story].name }}</h1>
+              <p>{{ stories[active_story].text }}</p>
             </div>
             <button class="btn">more stories</button>
           </div>
         </div>
         <div class="right">
           <h1 class="title">Other successful stories</h1>
-          <div class="item">
-            <h1>Amateur</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi possimus, repellendus. Atque, autem id
-              ipsam libero perferendis
-            </p>
-            <a href="#">More Information</a>
-          </div>
-          <div class="item">
-            <h1>Beginner</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi possimus, repellendus. Atque, autem id
-              ipsam libero perferendis
-            </p>
-            <a href="#">More Information</a>
-          </div>
-          <div class="item">
-            <h1>Professional</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi possimus, repellendus. Atque, autem id
-              ipsam libero perferendis
-            </p>
-            <a href="#">More Information</a>
-          </div>
+          <History
+              v-for="(story, idx) in stories"
+              :key="story.id"
+              :story="story"
+              @setActiveStory="setActiveHistory"
+              :index="idx"
+          />
         </div>
       </div>
     </div>
@@ -50,8 +31,34 @@
 </template>
 
 <script>
+import History from "@/components/History";
+import axios from "axios";
+
 export default {
-  name: "Success"
+  name: "Success",
+  components: {
+    History
+  },
+  data() {
+    return {
+      api: 'https://alibaraka.pythonanywhere.com/api/stories/',
+      stories: [{}],
+      active_story: 0,
+      default_image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU2kVc1rpu0zFLcinUxktDvMW7xSnsFwo4jA&usqp=CAU'
+    }
+  },
+  methods: {
+    async fetchStory() {
+      const response = await axios.get(this.api)
+      this.stories = await response.data
+    },
+    setActiveHistory(index) {
+      this.active_story = index
+    }
+  },
+  mounted() {
+    this.fetchStory()
+  }
 }
 </script>
 
